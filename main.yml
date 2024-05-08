@@ -1,0 +1,19 @@
+---
+
+- name: Install docker and kubernetes master node
+  hosts: master-node
+  become: true
+  remote_user: root
+
+  roles:
+   - master-role
+
+- name: Install docker and kubernetes on worker node
+  hosts: worker-node
+  become: true
+  remote_user: root
+
+  roles:
+   - worker-role
+
+
