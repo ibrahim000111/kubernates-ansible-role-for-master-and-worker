@@ -6,6 +6,7 @@
   remote_user: root
 
   roles:
+   - docker-role
    - master-role
 
 - name: Install docker and kubernetes on worker node
@@ -14,6 +15,7 @@
   remote_user: root
 
   roles:
+   - docker-role
    - worker-role
 
 
