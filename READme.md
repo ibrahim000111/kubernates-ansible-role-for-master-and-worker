@@ -1,3 +1,6 @@
+#system requiremnt
+
+RAM: 2GB  cpu: 2vcpu
 
 #run playbook
 
